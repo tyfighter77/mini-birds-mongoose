@@ -14,10 +14,10 @@ mongoose.connection.once('open', function(){
   console.log("Successfully connected to mongodb");
 });
 
-app.get('api/sighting', sightingCtrl.read);
-app.put('api/sighting', sightingCtrl.update);
-app.post('api/sighting', sightingCtrl.create);
-app.delete('api/sighting', sightingCtrl.delete);
+app.get('/api/sighting', sightingCtrl.read);
+app.put('/api/sighting', sightingCtrl.update);
+app.post('/api/sighting', sightingCtrl.create);
+app.delete('/api/sighting', sightingCtrl.delete);
 
 app.listen('3000', function(){
   console.log("Successfully listening on : 3000");
